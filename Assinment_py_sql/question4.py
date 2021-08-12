@@ -50,4 +50,11 @@ class Department:
                 #commit to the database
         return True
 
+#main method
+#creating an object of employees class and calling the compensation_by_dept method
 
+if __name__ == '__main__':
+    conn = None
+    cur = None
+    comp = Total_compensation()
+    comp.compensation
