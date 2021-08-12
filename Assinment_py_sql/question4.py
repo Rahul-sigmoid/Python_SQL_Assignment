@@ -47,6 +47,7 @@ class Department:
                 # after completion of above block closing the connection
                 cursor.close()
                 conn.close()
+                #commit to the database
         return True
 
 
