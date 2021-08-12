@@ -15,6 +15,7 @@ class Employees:
             conn = psycopg2.connect(
                 database="sql",
                 user="postgres",
+                #confidential information like password should not be shared on open source code; rather use environment variables or config file.
                 password="rahul")
 
             cursor = conn.cursor()
