@@ -15,6 +15,7 @@ class Compensation:
             conn = psycopg2.connect(
                 database="sql",
                 user="postgres",
+                #confidential information like password should not be shared on open source code; rather use environment variables or config file.
                 password="rahul")
 
             cursor = conn.cursor()
@@ -48,6 +49,7 @@ class Compensation:
                 # after completion of above block closing the connection
                 cursor.close()
                 conn.close()
+                #also commit the connection; otherwise all the transactions will have no effect.
 
         return True
 
